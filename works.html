@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YoonGi's portfolio 2022</title>
+    <link rel="stylesheet" href="master.css">
+    <link rel="shortcut icon" href="favicon/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="favicon/favicon.ico" type="image/x-icon">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+<body>
+    <nav class="nav_work">
+        <div class="nav_work_wrap">
+           
+            <div class="nav_work_logo"><a href="index.html"><img src="gif/logo_gif.gif"></a></div>
+            <div class="nav_work_works"><a onclick="fnMove('0')">Works</a></div>
+            <div class="nav_font nav_work_menu01"><a onclick="fnMove('1')">3D Arts</a></div>
+            <div class="nav_font nav_work_menu02"><a onclick="fnMove('2')">Motion Graphic</a></div>
+            <div class="nav_font nav_work_menu03"><a onclick="fnMove('3')">UI/UX</a></div>          
+            <div class="nav_font nav_work_menu04"><a onclick="fnMove('4')">Identity</a></div>           
+        </div> 
+
+        
+</nav>
+
+
+    <section>
+        <div class="work_video_size bg01" id="anchor0">
+            <video autoplay muted loop>
+                <source src="video/main_bg01_v2_mp4.mp4">
+           </video> 
+        </div>
+        
+        <div class="work_video_size bg02" id="anchor1"> 
+            <div class="bg02_wrap">
+                <div class="bg02_con">
+                <img class="work_bg02_img01" src="img/work_bg02_img01.png" alt="">
+                <a href="works_3d_arts.html"><img class="work_bg02_img02" src="img/work_bg02_img02.png" alt=""></a>
+                </div>
+            </div>
+            <video autoplay muted loop>
+                <source src="video/main_bg02_v2_mp4.mp4">
+           </video> 
+       </div>
+
+       <div class="work_video_size bg03" id="anchor2">
+            <div class="bg03_wrap">
+                <div class="bg03_con">
+                <img class="work_bg03_img01" src="img/work_bg03_img01.png" alt="">
+                 <a href="works_motion_graphic.html"><img class="work_bg03_img02" src="img/work_bg02_img02.png" alt=""></a>
+                </div>
+            </div>
+            <video autoplay muted loop>
+                <source src="video/main_bg03_v2_mp4.mp4">
+           </video> 
+       </div>
+
+       <div class="work_video_size bg04" id="anchor3">
+            <div class="bg04_wrap">
+                <div class="bg04_con">
+                <img class="work_bg04_img01" src="img/work_bg04_img01.png" alt="">
+                <a href="works_UI_UX.html"><img class="work_bg04_img02" src="img/work_bg02_img02.png" alt=""></a>
+                </div>
+            </div>
+            
+        </div>
+
+        <div class="work_video_size bg05" id="anchor4">
+            <div class="bg05_wrap">
+                <div class="bg05_con">
+                <img class="work_bg05_img01" src="img/work_bg05_img01.png" alt="">
+                <a href="works_identity.html"><img class="work_bg05_img02" src="img/work_bg02_img02.png" alt=""></a>
+                </div>
+            </div>
+            
+        </div>
+
+
+
+
+ 
+
+    </section>
+
+    <footer>
+        <div class="footer_main">
+            <div class="footer_con">
+              <a href="index.html"><img class="footer_logo" src="gif/logo_gif.gif"></a>
+                <a class="footer_p1">© 2022 Designer Jo Yoon Gi All Rights Reserved.</a>
+                <a class="footer_p2">Contact</a>
+                <a class="footer_p3">SNS</a>
+                <a class="footer_p4">dongne12345@yuhan.ac.kr</a>
+                <img class="sns01_footer" src="img/youtube_logo.png">
+                <img class="sns02_footer" src="img/behance_logo.png">
+                <img class="sns03_footer" src="img/vimeo_logo.png">
+            </div>
+        </div>
+   </footer>
+
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+      </script>
+
+<script type="text/javascript" src="smooth_scroll.js"></script>
+<script>
+function fnMove(seq){
+    var offset = $("#anchor" + seq).offset();
+    $('html, body').animate({scrollTop : offset.top},1000);
+}
+</script>   
+</body>
+</html>
